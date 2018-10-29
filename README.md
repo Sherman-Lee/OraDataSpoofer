@@ -37,6 +37,7 @@ python gui.py
 - Value of "Number of records" must be greater than value of "Max"
     
 ### To Do
+- "Clear All" button clears the internal buffer but it doesn't show on screen yet :<
 - Specific statistic distributions of data
 - More data types
 - More application features
