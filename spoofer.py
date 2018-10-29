@@ -75,4 +75,4 @@ def gen(headers, records, items):
         output.insert(loc = len(output.columns), column=h[0], value=df)
     
     print(output)
-    #output.to_csv('fake_data.csv', index=False)
+    output.to_csv('output.csv', index=False)
