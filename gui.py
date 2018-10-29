@@ -13,7 +13,7 @@ def press(button):
     if button == "Add Field":
         fName = app.getEntry("FieldName")
         fType = app.getRadioButton("FieldType")
-        min = int(app.getEntry("Min"))
+        min = int(app.getEntry("Min (Must be >= 0)"))
         max = int(app.getEntry("Max"))
         globe.items = app.getTextArea("TxtArea")
         globe.headers.add((fName, min, max, fType))
