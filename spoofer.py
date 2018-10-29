@@ -62,7 +62,7 @@ def gen(headers, records, items):
         elif h[3] == 'Ints':
             col = fake_ints(min, max, records)
         elif h[3] == 'Dates':
-            col = fake_dates('2010-01-01', min, max, records)
+            col = fake_dates('2000-01-01', min, max, records)
         elif h[3] == 'Emails':
             col = fake_emails(records, emailLen)
         elif h[3] == 'Zips':
