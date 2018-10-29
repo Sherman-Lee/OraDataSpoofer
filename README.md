@@ -30,11 +30,11 @@ python gui.py
 7. Enter the value for "Number of records" to decide the number of rows to be generated after all columns are added for confirmation.
 8. Click "Next" to generate the data.  Output will be saved as "output.csv" in the project directory
 
-    ---Notes---
-    - Dates are generated with a random base date from 2010-01-01, in the format of YYYY-MM-DD
-    - Emails are generated with a random alphanumeric string and a @ora.com ending
-    - Zips are generated with a random five-digit format from 00000 to 99999
-    - Value of "Number of records" must be greater than value of "Max"
+### Notes
+- Dates are generated with a random base date from 2010-01-01, in the format of YYYY-MM-DD
+- Emails are generated with a random alphanumeric string and a @ora.com ending
+- Zips are generated with a random five-digit format from 00000 to 99999
+- Value of "Number of records" must be greater than value of "Max"
     
 ### To Do
 - Specific statistic distributions of data
