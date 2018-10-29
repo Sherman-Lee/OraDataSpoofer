@@ -16,7 +16,7 @@ def press(button):
         min = int(app.getEntry("Min (Must be >= 0)"))
         max = int(app.getEntry("Max"))
         globe.items = app.getTextArea("TxtArea")
-        globe.headers.add((fName, min, max, fType))
+        globe.headers.add((fName, min, max, fType, globe.items))
         idlabel = "id" + str(globe.tick)
         globe.tick += 1
         app.addLabel(idlabel, fName + ", " + str(min) + ", " + str(max) + ", " + fType)
@@ -24,7 +24,7 @@ def press(button):
         globe.headers.clear()
     elif button == "Next":
         print(globe.items)
-        gen(list(globe.headers), int(app.getEntry("Number of Records")), globe.items)
+        gen(list(globe.headers), int(app.getEntry("Number of Records")))
 
 app = gui("Login Window", "1000x500")
 app.addLabel("title", "Welcome to OraDataSpoofer", 0, 0, 3)

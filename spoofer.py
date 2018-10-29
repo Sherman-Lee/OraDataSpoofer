@@ -42,20 +42,19 @@ def load_nouns():
         nouns.add(line)
     return nouns
 
-def gen(headers, records, items):
+def gen(headers, records):
     output = pd.DataFrame([])
     emailLen = 15
-
-    if (items == ""):
-        items = dict(enumerate(load_nouns()))
-    else:
-        words = items.split("\n")
-        items = dict(enumerate(words))
 
     for h in headers:
         min = h[1]
         max = h[2]
         if h[3] == 'Strings':
+            if (h[4] == ""):
+                items = dict(enumerate(load_nouns()))
+            else:
+                words = h[4].split("\n")
+                items = dict(enumerate(words))
             col = fake_maps(min, max, records, items)
         elif h[3] == 'Floats':
             col = fake_floats(min, max, records)
